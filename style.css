@@ -12,40 +12,43 @@ body {
     margin-left: 20px;
     margin-top: 0px;
     
-    
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
-
-nav button {
-    margin-top: 5px;
+#logo {
+    margin-top: 0px;
+    margin-right: auto;
     margin-left: 22px;
-
-
+    padding: 0px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
 }
 
-.classic {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
+#logo p {
     color: black;
-    background-color: #d4d0c8;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    box-shadow: inset 2px 2px 0 #808080, inset -2px -2px 0 #000000; /* Swapped shadows */
-    text-shadow: 1px 1px 0 #ffffff;
-    cursor: pointer;
-    user-select: none;
-    image-rendering: pixelated;
-  }
-  
-  .classic:hover {
-    background-color: greenyellow;
-  }
+    overflow: hidden;
+    margin-inline: auto;
+    white-space: nowrap;
+    border-right: 1px solid;
+    
+    animation: typing 2s steps(15)forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
 
 nav ul {
     display: flex;
@@ -54,8 +57,6 @@ nav ul {
     list-style: none;
     text-decoration: none;
 }
-
-
 
 li a {
     border: none;
@@ -96,49 +97,40 @@ a:active {
     gap: 20px;
 }
 
-#logo {
+
+
+nav {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: 22px;
-    padding: 0px;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: xx-large;
-}
-
-#logo p {
-    color: black;
-    overflow: hidden;
-    margin-inline: auto;
-    white-space: nowrap;
-    border-right: 1px solid;
-    
-    animation: typing 2s steps(15)forwards, blink 1s step-end infinite;
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    50%{
-        border-color: transparent;
-    }
+    margin-right: 10px;
 }
 
 .navgroup1 .navgroup2 {
     white-space: nowrap;
-
 }
+
+nav button {
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+.classic {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: black;
+    background-color: #d4d0c8;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    box-shadow: inset 2px 2px 0 #808080, inset -2px -2px 0 #000000; /* Swapped shadows */
+    text-shadow: 1px 1px 0 #ffffff;
+    cursor: pointer;
+    user-select: none;
+    image-rendering: pixelated;
+  }
+  
+  .classic:hover {
+    background-color: greenyellow;
+  }
 
 .face {
     display: flex;
@@ -146,7 +138,6 @@ a:active {
     border-radius: 15px;
     margin: 10px;
     margin-top: 0px;
-
 }
 
 
@@ -157,18 +148,21 @@ a:active {
     height: 1000px; 
     margin-right: 100px;
 }
-.intro {
+
+.numbering,.elements,.text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 100px;
-    /* font-family: Monaco, Consolas, "Lucida Console", monospace; */
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.intro {
+    display: flex;
     font-family: 'Share Tech Mono', monospace;
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
-
+    gap: 20px;
 }
 
 .intro h1,h2 {
@@ -176,13 +170,9 @@ a:active {
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
-
 }
 
-img {
 
-   
-}
 
 .main {
     width: 10px;
