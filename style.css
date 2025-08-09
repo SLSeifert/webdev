@@ -163,6 +163,9 @@ nav button {
     font-style: normal;
     font-size: xx-large;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .intro h1,h2 {
@@ -176,7 +179,7 @@ nav button {
 
 .main {
 
-    background-color: black;
+    background-color: rgb(41, 40, 40);
     font-family: 'Fira Code', monospace;
     color: #00FF00;
     margin: 10px;
