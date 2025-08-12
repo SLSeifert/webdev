@@ -149,12 +149,12 @@ nav button {
     margin-right: 100px;
 }
 
-.numbering,.elements,.text {
+/* .numbering,.elements,.text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 100px;
-}
+} */
 
 .intro {
     display: flex;
@@ -162,9 +162,10 @@ nav button {
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
-    gap: 20px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
 
 }
 
@@ -175,7 +176,98 @@ nav button {
     font-style: normal;
 }
 
+.name{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 88px;
+}
 
+.grid-container {
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-rows: repeat(7,80px);
+    grid-template-columns: repeat(22, 40px);
+    grid-template-areas: 
+    "  item1  .  item2  item2  item2  item2  item2  item2  item2  item2  item2  item2  .  .  .  .  .  .  .  .  .  ."
+    "  item3  .  .  .  item4  item4  item5  item5  item5  item5  item5  item5  item6  item6  .  .  .  .  .  .  .  ."
+    "  item7  .  .  .  item8  item8  item9  item9  item9  item9  item9  item9  item9  item9  item10  item10  .  .  .  .  .  ."
+    "  item11 .  .  .  item12  item12  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item14  item14  .  ."
+    "  item15  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  "
+    "  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  "
+    "  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+    ;
+}
+
+.grid-item {
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
+
+.item9 {
+    grid-area: item9;
+}
+
+.item10 {
+    grid-area: item10;
+}
+.item11 {
+    grid-area: item11;
+}
+.item12 {
+    grid-area: item12;
+}
+.item13 {
+    grid-area: item13;
+}
+
+.item14 {
+    grid-area: item14;
+}
+.item15 {
+    grid-area: item15;
+}
+.item16 {
+    grid-area: item16;
+}
+
+.item17 {
+    grid-area: item17;
+}
 
 .main {
 
