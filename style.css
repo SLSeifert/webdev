@@ -134,7 +134,8 @@ nav button {
 
 .face {
     display: flex;
-    background-color: rgba(128, 128, 128, 0.359);
+    /* background-color: rgba(128, 128, 128, 0.359); */
+    background: linear-gradient(to top, rgb(23, 23, 23) 35%, grey 100%);
     border-radius: 15px;
     margin: 10px;
     margin-top: 0px;
@@ -146,7 +147,7 @@ nav button {
     border-bottom-left-radius: 15px;
     width: auto;
     height: 1000px; 
-    margin-right: 100px;
+    margin-right: 33px;
 }
 
 /* .numbering,.elements,.text {
@@ -162,9 +163,10 @@ nav button {
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
+
 
 
 }
@@ -176,26 +178,49 @@ nav button {
     font-style: normal;
 }
 
+/* .tabs {
+    display: flex;
+    gap: 2px;
+    
+    
+    margin-right: auto;
+    margin-left: 14px;
+}
+
+.tab1, .tab2 {
+    border: 1px solid black;
+    padding: 5px;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    font-family: 'Fira Code', monospace;
+} */
+
+.ide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .name{
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 88px;
+    color: rgb(251, 241, 222);
 }
 
 .grid-container {
     display: grid;
-    /* border: 1px solid black; */
-    grid-template-rows: repeat(7,80px);
-    grid-template-columns: repeat(22, 40px);
+    padding-top: 20px;
+    padding-left: 50px;
+    grid-template-rows: repeat(5,80px);
+    grid-template-columns: repeat(21, 40px);
     grid-template-areas: 
-    "  item1  .  item2  item2  item2  item2  item2  item2  item2  item2  item2  item2  .  .  .  .  .  .  .  .  .  ."
-    "  item3  .  .  .  item4  item4  item5  item5  item5  item5  item5  item5  item6  item6  .  .  .  .  .  .  .  ."
-    "  item7  .  .  .  item8  item8  item9  item9  item9  item9  item9  item9  item9  item9  item10  item10  .  .  .  .  .  ."
-    "  item11 .  .  .  item12  item12  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item14  item14  .  ."
-    "  item15  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  "
-    "  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  "
-    "  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+    "  item1  .  item2  item2  item2  item2  item2  item2  item2  item2  item2  item2  .  .  .  .  .  .  .  .  .  "
+    "  item3  .  item0  .  item4  item4  item5  item5  item5  item5  item5  item5  item6  item6  .  .  .  .  .  .  .  "
+    "  item7  .  item0  .  item8  item8  item9  item9  item9  item9  item9  item9  item9  item9  item10  item10  .  .  .  .  .  "
+    "  item11 .  item0  .  item12  item12  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item13  item14  item14  .  "
+    "  item15 .  .  item16  item16  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   "
     ;
 }
 
@@ -204,6 +229,14 @@ nav button {
     /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
+    margin: 0;
+}
+
+.item0 {
+    grid-area: item0;
+    border-right: 3px solid rgb(96, 95, 95);
+    justify-self: center;
+    margin-left: 20px;
 }
 
 .item1 {
@@ -218,12 +251,17 @@ nav button {
     grid-area: item3;
 }
 
+.item1,.item3, .item7, .item11, .item15 {
+    color: rgb(96, 95, 95);
+}
+
 .item4 {
     grid-area: item4;
 }
 
 .item5 {
     grid-area: item5;
+    color: white;
 }
 
 .item6 {
@@ -253,6 +291,7 @@ nav button {
 }
 .item13 {
     grid-area: item13;
+    color: white;
 }
 
 .item14 {
@@ -269,14 +308,22 @@ nav button {
     grid-area: item17;
 }
 
-.main {
+/* .pink {
+    color: #ff4365;
+} */
 
-    background-color: rgb(41, 40, 40);
+.terminal {
+
+    /* background-color: rgb(41, 40, 40); */
     font-family: 'Fira Code', monospace;
     color: #00FF00;
-    margin: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
     padding: 20px;
-    border-radius: 15px;
+    padding-right: 0;
+    padding-left: 80px;
+    width: 853px;
+    
 }
 
 footer {
